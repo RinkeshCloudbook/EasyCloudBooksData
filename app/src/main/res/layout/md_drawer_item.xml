@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/mdRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/md_list_item_height"
+        android:paddingBottom="@dimen/md_list_item_margin"
+        android:paddingEnd="@dimen/md_baseline"
+        android:paddingLeft="@dimen/md_baseline"
+        android:paddingRight="@dimen/md_baseline"
+        android:paddingStart="@dimen/md_baseline"
+        android:paddingTop="@dimen/md_list_item_margin">
+        <ImageView
+            android:id="@id/mdImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView
+                android:id="@id/mdTextPrimary"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:singleLine="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                tools:ignore="UnusedAttribute"
+                android:maxLines="1" />
+            <TextView
+                android:id="@id/mdTextSecondary"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/md_list_item_text_secondary_margin"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:gravity="start"
+                android:maxLines="2"
+                android:textAlignment="textStart"
+                tools:ignore="UnusedAttribute" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

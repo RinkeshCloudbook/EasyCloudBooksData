@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/userCover"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/cd_main_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.pkmmte.view.CircularImageView
+                    android:id="@+id/userPhoto"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+                        android:id="@+id/userFullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/profile_verify_icon"
+                        android:text="Joe Smith"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        app:typeface="robotoLight" />
+
+
+                    <TextView
+                        android:id="@+id/userUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/userPhoto"
+                        android:layout_toEndOf="@+id/userPhoto"
+                        android:layout_toRightOf="@+id/userPhoto"
+                        android:maxLines="1"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:singleLine="true"
+                        android:text="(\@username)"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/mdProfileTextContainer_Parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@id/mdProfileTextContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minHeight="@dimen/md_list_item_height"
+                    android:orientation="vertical"
+                    android:padding="@dimen/md_baseline">
+
+                    <TextView
+                        android:id="@id/mdProfileName"
+                        style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:ellipsize="marquee"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:textAlignment="textStart"
+                        tools:ignore="UnusedAttribute"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@id/mdProfileDescription"
+                        style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:ellipsize="marquee"
+                        android:gravity="start"
+                        android:textAlignment="textStart"
+                        tools:ignore="UnusedAttribute"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/mdOpenProfileListIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:contentDescription="Secondary Avatar"
+                    android:padding="@dimen/md_baseline"
+                    android:scaleType="center"
+                    android:src="@drawable/md_arrow_drop_down" />
+
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/mdProfileFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.easycloudbooks.easycloudbooks.widget.LinearListView
+                    android:id="@id/mdProfileList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/md_drawer_list_margin_vertical"
+                    android:paddingTop="@dimen/md_drawer_list_margin_vertical" />
+
+                <com.easycloudbooks.easycloudbooks.widget.LinearListView
+                    android:id="@id/mdList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/md_drawer_list_margin_vertical"
+                    android:paddingTop="@dimen/md_drawer_list_margin_vertical" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_top"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/userCover"
+            android:background="@color/material_light_yellow_600" />
+
+</RelativeLayout>

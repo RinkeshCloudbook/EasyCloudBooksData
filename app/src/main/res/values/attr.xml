@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FButton">
+        <attr name="shadowEnabled" format="boolean" />
+        <attr name="buttonColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="FButton_ButtonText" format="string" />
+        <attr name="FButton_FAIconText" format="string" />
+        <attr name="FButton_FAIconColor" format="color" />
+        <attr name="FButton_FAIconMarginTop" format="dimension" />
+        <attr name="FButton_FAIconMarginLeft" format="dimension" />
+        <attr name="FButton_FAIconSize" format="float" />
+        <attr name="FButton_FAIconSizeType" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="RobotoTextView">
+        <attr name="typeface" format="enum">
+            <enum name="robotoBlack" value="0" />
+            <enum name="robotoBlackItalic" value="1" />
+            <enum name="robotoBold" value="2" />
+            <enum name="robotoBoldItalic" value="3" />
+            <enum name="robotoBoldCondensed" value="4" />
+            <enum name="robotoBoldCondensedItalic" value="5" />
+            <enum name="robotoCondensed" value="6" />
+            <enum name="robotoCondensedItalic" value="7" />
+            <enum name="robotoItalic" value="8" />
+            <enum name="robotoLight" value="9" />
+            <enum name="robotoLightItalic" value="10" />
+            <enum name="robotoMedium" value="11" />
+            <enum name="robotoMediumItalic" value="12" />
+            <enum name="robotoRegular" value="13" />
+            <enum name="robotoThin" value="14" />
+            <enum name="robotoThinItalic" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries" />
+        <attr name="dividerThickness" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawerFrameLayout">
+        <attr name="drawerMaxWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="rippleColor" format="color" />
+        <attr name="rippleDimension" format="dimension" />
+        <attr name="rippleOverlay" format="boolean" />
+        <attr name="rippleAlpha" format="float" />
+        <attr name="rippleDuration" format="integer" />
+        <attr name="rippleFadeDuration" format="integer" />
+        <attr name="rippleHover" format="boolean" />
+        <attr name="rippleBackground" format="color" />
+        <attr name="rippleDelayClick" format="boolean" />
+        <attr name="ripplePersistent" format="boolean" />
+        <attr name="rippleInAdapter" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+        <attr name="contourColor" format="color" />
+        <attr name="contourSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ShaderImageView">
+        <attr name="siSquare" format="boolean" />
+        <attr name="siBorderColor" format="color" />
+        <attr name="siBorderWidth" format="dimension" />
+        <attr name="siBorderAlpha" format="float" />
+        <attr name="siForeground" format="integer|reference" />
+        <!-- Rounded Image View -->
+        <attr name="siRadius" format="dimension" />
+        <!--BubbleImageView-->
+        <attr name="siArrowPosition" />
+        <attr name="siTriangleHeight" format="dimension" />
+        <!--PorterImageView-->
+        <attr name="siShape" format="integer|reference" />
+        <!--ShaderImageView-->
+        <attr name="siBorderType" />
+        <attr name="siStrokeCap" />
+        <attr name="siStrokeJoin" />
+        <attr name="siStrokeMiter" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableCardView">
+        <attr name="title" format="string"/>
+        <attr name="icon" format="reference"/>
+        <attr name="inner_view" format="reference"/>
+        <attr name="expandOnClick" format="boolean"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="startExpanded" format="boolean"/>
+        <attr name="minHeight" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="ExpandableImageCardView">
+        <attr name="title1" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="image" format="string"/>
+        <attr name="inner_view1" format="reference"/>
+        <attr name="expandOnClick1" format="boolean"/>
+        <attr name="animationDuration1" format="integer"/>
+        <attr name="startExpanded1" format="boolean"/>
+        <attr name="minHeight1" format="float"/>
+    </declare-styleable>
+    <dimen name="default_card_height">50dp</dimen>
+    <dimen name="default_vertical_padding">10dp</dimen>
+    <string name="expandable_card_view_image_content_description">Arrow to expand card</string>
+    <string name="expandable_card_view_icon_content_description">Card icon</string>
+    <declare-styleable name="AvatarView">
+        <attr name="avatar_shape" format="string" />
+        <attr name="avatar_size" format="dimension" />
+    </declare-styleable>
+</resources>

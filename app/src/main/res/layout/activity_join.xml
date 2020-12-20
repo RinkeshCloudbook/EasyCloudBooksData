@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentview"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.easycloudbooks.easycloudbooks.view.kbv.KenBurnsView
+        android:id="@+id/ken_burns_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cyan_800_overlay" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logow"
+        tools:ignore="SpUsage" />
+
+    <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+        android:id="@+id/welcome_text"
+        style="@style/TextViewAppearance.Headline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white" />
+
+    <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+        android:id="@+id/detail_text"
+        android:layout_below="@+id/welcome_text"
+        style="@style/TextViewAppearance.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/white" />
+
+
+    <com.easycloudbooks.easycloudbooks.font.FButton
+        android:id="@+id/ok_button"
+        android:layout_below="@+id/detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:text=""
+        android:drawablePadding="2dp"
+        android:textColor="@android:color/white"
+        fbutton:FButton_FAIconColor="@android:color/white"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="3dp"
+        fbutton:FButton_ButtonText="Accept"
+        fbutton:FButton_FAIconMarginTop="-1dp"
+        fbutton:FButton_FAIconText="@string/fa_check"
+        fbutton:buttonColor="@color/fbutton_color_peter_river"
+        fbutton:FButton_FAIconSize="30"
+        android:layout_centerHorizontal="true"/>
+
+    <com.easycloudbooks.easycloudbooks.font.FButton
+        android:id="@+id/cancel_button"
+        android:layout_below="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:drawablePadding="2dp"
+        android:textColor="@android:color/white"
+        fbutton:FButton_FAIconColor="@android:color/white"
+        fbutton:cornerRadius="10dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="3dp"
+        fbutton:FButton_ButtonText="Cancel"
+        fbutton:buttonColor="@color/fbutton_color_pumpkin"
+        fbutton:FButton_FAIconMarginTop="-1dp"
+        fbutton:FButton_FAIconText="@string/fa_times"
+        fbutton:FButton_FAIconSize="30"
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

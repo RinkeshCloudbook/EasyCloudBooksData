@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchOpration"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_dir"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/main_color_500"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:theme="@style/AppTheme.Title">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/txt_selectDirName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="Search"
+            android:paddingLeft="@dimen/dimen_12dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--tools:mContext=".activity.MainActivity"
+    tools:showIn="@layout/fragment_company"-->
+    <RelativeLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/edt_search_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/search_edit_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/default_vertical_padding"
+                    android:paddingBottom="@dimen/default_vertical_padding"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/grey_60"
+                            app:srcCompat="@drawable/ic_search" />
+
+                        <EditText
+                            android:id="@+id/edt_search"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Search...."
+                            android:imeOptions="actionSearch"
+                            android:maxLines="1"
+                            android:singleLine="true">
+
+                            <requestFocus />
+
+                        </EditText>
+
+                        <ImageButton
+                            android:id="@+id/bt_clear"
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:tint="@color/grey_60"
+                            app:srcCompat="@drawable/ic_close" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp" >
+            <Button
+                android:layout_below="@+id/search_edit_frame"
+                android:id="@+id/btn_search"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:background="@color/main_color_500"
+                android:layout_height="@dimen/dimen_40dp"
+                android:text="Search" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edt_search_value"
+            android:paddingTop="3dp"
+            android:background="@drawable/gradient"
+            tools:context=".activity.MainActivity">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <LinearLayout
+                android:id="@+id/lyt_delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_below="@+id/edt_search_value"
+                android:padding="@dimen/dimen_10dp"
+                android:background="@drawable/delete_border_bg">
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/dimen_25dp"
+                    android:layout_height="@dimen/dimen_25dp"
+                    android:src="@drawable/ic_delete_black_24dp">
+                </ImageView>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/bottom_sheet_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/message"
+            android:gravity="center"/>
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyle" >
+        </ProgressBar>
+    </RelativeLayout>
+
+</LinearLayout>

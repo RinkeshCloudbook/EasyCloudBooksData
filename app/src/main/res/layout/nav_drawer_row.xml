@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.easycloudbooks.easycloudbooks.view.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RippleStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_navigation_social" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/iv_NavLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:minHeight="50dp" >
+
+            <com.easycloudbooks.easycloudbooks.font.FontAwesomeTextView
+                android:id="@+id/iv_NavIcon"
+                style="@style/TextViewAppearance.Title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="@string/material_icon_account"
+                android:textColor="@color/main_color_500"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+                    android:id="@+id/tv_NavTitle"
+                    style="@style/TextViewAppearance.Title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/main_color_grey_800"
+                    android:textSize="14sp"
+                    app:typeface="robotoRegular" />
+
+                <LinearLayout
+                    android:id="@+id/DescLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+                        android:id="@+id/number_of_item"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="0dp"
+                        android:text="254"
+                        android:textColor="@color/main_color_grey_400"
+                        android:textSize="12sp"
+                        app:typeface="robotoRegular" />
+
+                    <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+                        android:id="@+id/name_of_item"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="0dp"
+                        android:text="people"
+                        android:textColor="@color/main_color_grey_400"
+                        android:textSize="12sp"
+                        app:typeface="robotoRegular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+                android:id="@+id/tv_NavCounter"
+                style="@style/TextViewAppearance.Title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="8"
+                android:background="@color/material_yellow_500"
+                android:textColor="@color/main_color_500"
+                android:textSize="12sp"
+                app:typeface="robotoBold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_color_grey_300" />
+    </LinearLayout>
+
+</com.easycloudbooks.easycloudbooks.view.MaterialRippleLayout>

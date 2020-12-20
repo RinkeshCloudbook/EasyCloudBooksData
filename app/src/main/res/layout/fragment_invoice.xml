@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_500"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fillAfter="false"
+                    android:fillEnabled="false">
+
+                    <ImageView
+                        android:id="@+id/company_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:id="@+id/company_image_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/icon_text" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/white"
+                    app:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_smlarge"
+                android:paddingLeft="@dimen/spacing_smlarge"
+                android:paddingRight="@dimen/spacing_smlarge"
+                android:paddingTop="@dimen/spacing_medium">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="horizontal">
+
+                    <com.easycloudbooks.easycloudbooks.font.FontAwesomeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/fa_rupee"
+                        android:textColor="@android:color/white"
+                        android:textSize="35sp"/>
+                    <TextView
+                        android:id="@+id/payment_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/payment_pay_now"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Click to Pay Now"
+                        android:theme="@style/Button.White.Primary" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/image_paid_container"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-100dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <ImageView android:src="@drawable/paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.17" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/ic_insert_drive" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="?attr/actionBarSize"
+                        android:text="Request Details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_40" />
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_list_row">
+                        <TextView
+                            style="@style/CardSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="Id : "
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tv_invoice_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="id"
+                            style="@style/CardTitle"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/msg_text_primary"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/grey_10" />
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="40dp"
+                        android:clickable="false"
+                        android:paddingLeft="5dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_list_row">
+                        <TextView
+                            style="@style/CardSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="Date : "
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/payment_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="date"
+                            style="@style/CardTitle"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/msg_text_primary"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/invoice_project_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:id="@+id/invoice_project_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="?attr/actionBarSize"
+
+                android:orientation="horizontal">
+
+                <com.easycloudbooks.easycloudbooks.font.FontAwesomeTextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="0dp"
+                    android:text="@string/fa_suitcase"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/theme_success"
+                    android:textSize="20sp"/>
+
+
+
+                <TextView
+                    android:id="@+id/invoice_project_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Project (s)"
+                    android:textColor="@color/grey_80"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <View
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/bt_toggle_items"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey_10" />
+
+
+            <LinearLayout
+                android:id="@+id/tv_invoice_paid_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/ic_checked_checkbox" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="?attr/actionBarSize"
+                        android:text="Payment Details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/grey_40" />
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="40dp"
+                        android:clickable="false"
+                        android:paddingLeft="5dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_list_row">
+                        <TextView
+                            style="@style/CardSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="Id : "
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tv_invoice_transid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="transaction id"
+                            style="@style/CardTitle"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/msg_text_primary"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/grey_10" />
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="40dp"
+                        android:clickable="false"
+                        android:paddingLeft="5dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_list_row">
+                        <TextView
+                            style="@style/CardSubTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="Date : "
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/payment_trans_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="date"
+                            style="@style/CardTitle"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/msg_text_primary"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView >
+

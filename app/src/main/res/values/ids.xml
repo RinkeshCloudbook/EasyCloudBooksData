@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mdProfileBackground" type="id" />
+    <item name="mdProfileBackgroundOverlay" type="id" />
+    <item name="mdProfileTextContainer" type="id" />
+    <item name="mdProfileName" type="id" />
+    <item name="mdProfileDescription" type="id" />
+
+    <item name="mdOpenProfileListContainer" type="id" />
+    <item name="mdOpenProfileListIcon" type="id" />
+    <item name="mdProfileTextContainer_Parent" type="id" />
+
+    <item name="mdProfileList" type="id" />
+
+
+    <item name="mdList" type="id" />
+
+
+    <item name="mdRoot" type="id" />
+    <item name="mdImage" type="id" />
+    <item name="mdTextPrimary" type="id" />
+    <item name="mdTextSecondary" type="id" />
+</resources>

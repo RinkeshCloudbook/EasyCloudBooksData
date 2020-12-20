@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_grey_100" >
+
+    <LinearLayout
+        android:id="@+id/update_parent_providers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingTop="60dp" >
+        <ImageView android:src="@drawable/logo"
+            android:id="@+id/gateway_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.17" />
+        <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+            android:id="@+id/gateway_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewAppearance.Display1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="EasyCloudBooks" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lyt_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/spacing_medium"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View style="@style/DividerStyle"/>
+        <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewAppearance.Display1"
+            android:textAlignment="center"
+            android:text="Please Wait" />
+
+        <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewAppearance.Body1"
+            android:textAlignment="center"
+            android:text="Donot Close or Change App, We are Processing your Request. This will Automatically close." />
+        <LinearLayout
+            android:id="@+id/update_providers"
+            style="@style/about_sub_wrapper"
+            android:padding="0dp"></LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

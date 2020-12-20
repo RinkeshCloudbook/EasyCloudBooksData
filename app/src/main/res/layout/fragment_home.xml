@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_grey_100" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingTop="60dp" >
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.17" />
+        <View style="@style/DividerStyle"/>
+        <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewAppearance.Display1"
+            android:textAlignment="center"
+            android:text="Coming Soon" />
+        <com.easycloudbooks.easycloudbooks.font.RobotoTextView
+            android:id="@+id/commingsoonpagename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewAppearance.Body1"
+            android:textAlignment="center"
+            android:text="Coming Soon" />
+    </LinearLayout>
+</ScrollView>

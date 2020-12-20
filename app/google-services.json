@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "370303545683",
+    "firebase_url": "https://easycloudbooks-1023.firebaseio.com",
+    "project_id": "easycloudbooks-1023",
+    "storage_bucket": "easycloudbooks-1023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370303545683:android:7305a7d9f63375cc",
+        "android_client_info": {
+          "package_name": "com.easycloudbooks.easycloudbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370303545683-vc26dgtr3j8a6aq5em1ua459ieg3e23n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.easycloudbooks",
+            "certificate_hash": "3906c5f607bdb912d0a063d6b31c6c67146da4bb"
+          }
+        },
+        {
+          "client_id": "370303545683-cadbk09js71cavg93u0o6ag0vacm9gv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6cDyzjnE8DVmLYwRNTyNxO_WAgwjXaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370303545683-78u1q086aektgfd1ggrq60milps4mof4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5345318103778928~3074073490"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370303545683:android:e092cdf0d5db3585",
+        "android_client_info": {
+          "package_name": "com.easycloudbooks.ecb_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370303545683-su3v7353pneefub3t8iq4amp5n5qlhln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "d39997fd25e8b8b2eb05f19e8f4c8d29f4c345f1"
+          }
+        },
+        {
+          "client_id": "370303545683-1stsvnht8m3hm5jfe2fnnoibt4laktna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "40dba89f4baacd587295a8d80890053e2ccfca31"
+          }
+        },
+        {
+          "client_id": "370303545683-cro4kjme40p7peqn1ust7q2t3tkil8rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "74cad173998f46895d2dade28345995ffbf2f848"
+          }
+        },
+        {
+          "client_id": "370303545683-gakt1r7le2hvdll6tpl2p11padvvsspi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "9927e486a59812a411c5e644e8f970f7028e9b67"
+          }
+        },
+        {
+          "client_id": "370303545683-2em6o507f7o74c6c5i00vr74fp158i3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "05f19e65c94ab5b36e40d88ca14e7fdd106ef0f0"
+          }
+        },
+        {
+          "client_id": "370303545683-derhhnbd02v3ub3ia74ataoavagb8uhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easycloudbooks.ecb_client",
+            "certificate_hash": "3906c5f607bdb912d0a063d6b31c6c67146da4bb"
+          }
+        },
+        {
+          "client_id": "370303545683-cadbk09js71cavg93u0o6ag0vacm9gv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6cDyzjnE8DVmLYwRNTyNxO_WAgwjXaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370303545683-78u1q086aektgfd1ggrq60milps4mof4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
